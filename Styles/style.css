@@ -1,0 +1,2060 @@
+.container-right {
+  overflow-x: hidden;
+}
+html {
+  --baseFontWidth: 100%;
+  --rootMultiplier: 1;
+}
+.enabledTiledWindow {
+  --left-content-root-width: calc(25vw - 0px) !important;
+  --left-content-width: calc(25vw - 0px) !important;
+  --right-content-width: calc(45vw - 0px) !important;
+  --order-content-width: calc(31vw - 0px) !important;
+  --order-window-width: 37.5rem;
+  --wrapperMaxWidth: 100%;
+}
+
+
+
+#basketWindowContainer {
+  display: none;
+  
+  
+}
+
+#positionSwitcherBG {
+  display: none;
+  background-color: #000;
+  
+  opacity: 0.1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  z-index: 55;
+}
+#positionSwitcherModal {
+  
+  
+  
+  
+  text-align: center;
+  display: flex;
+  
+  
+  margin: auto;
+  padding: 3px;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: var(--baseFontWidth);
+}
+
+#positionSwitcherModal .modal-container {
+  width: 49em;
+  padding: 0px 15px;
+  border: 2px solid #8585852e;
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: 0px;
+  z-index: 56;
+  position: fixed;
+  bottom: 0;
+  
+  margin-bottom: calc(var(--statusBarHeight) + 0.1em);
+}
+#positionSwitcherModal .dragHeaderHandle {
+  cursor: move;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+[data-theme="default"] #positionSwitcherModal .modal-container {
+  border-color: #86868670;
+}
+#positionSwitcherModal .modal-header {
+  font-weight: bold;
+  margin: 7px 0px;
+  
+  border-bottom: 0px;
+}
+#positionSwitcherModal .modal-footer {
+  border-top: 0px;
+  margin-top: 0px;
+  padding: 15px;
+  margin: 5px 0px;
+  border-radius: 4px;
+  background-color: #00000014;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#positionSwitcherModal .searchOpen.modal-footer {
+  filter: blur(0.2rem);
+}
+#positionSwitcherModal .searchOpen.modal-body {
+  filter: blur(0.2rem);
+}
+#positionSwitcherModal .searchOpen.modal-footer > * {
+  pointer-events: none;
+}
+#positionSwitcherModal .searchOpen.modal-body > * {
+  pointer-events: none;
+}
+
+[data-theme="default"] #positionSwitcherModal .modal-footer {
+  background-color: #b0b0b01a;
+}
+
+#positionSwitcherModal .modal-body .modalBodyBottomDiv {
+  margin: 12px 0px;
+  margin: 12px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#positionSwitcherModal .fa-solid:hover {
+  opacity: 0.8;
+}
+#positionSwitcherModal .modalBodyBottomDiv .addBtn {
+  font-size: 1.7em;
+  color: #4987ee;
+  cursor: pointer;
+}
+#positionSwitcherModal .modalBodyBottomDiv .modalBottomDivChild {
+  flex-basis: 33%;
+}
+#positionSwitcherModal .modalBodyBottomDiv .basketGroupQuantity {
+  justify-content: right;
+}
+.noPos #positionSwitcherModal .modalBodyBottomDiv .basketGroupQuantity {
+  visibility: hidden;
+}
+
+#positionSwitcherModal .modal-footer .basketInfoHeader {
+  font-weight: bold;
+  font-size: 0.92em;
+  color: #757575;
+  line-height: 1.3;
+}
+#positionSwitcherModal .modal-footer .basketInfoContent {
+  font-weight: bold;
+  font-size: 1.09em;
+}
+#positionSwitcherModal .basketStateInfo {
+  flex: 1 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#positionSwitcherModal .modal-header .row {
+  line-height: 1.4;
+  margin: 5px 0px;
+  
+}
+#positionSwitcherModal .modal-header .orderDayType {
+  user-select: none;
+  cursor: pointer;
+  font-size: 0.75em;
+  border: 1px solid;
+}
+#positionSwitcherModal .modal-header .basketPrice {
+  font-size: 1.15em;
+  margin: 0px 3px;
+}
+#positionSwitcherModal .modal-header .basketChange {
+  font-size: 1.02em;
+  margin: 0px 3px;
+  color: #888888;
+  text-align: left;
+}
+
+#positionSwitcherModal .modal-footer .row {
+  display: flex;
+  justify-content: flex-end;
+}
+#positionSwitcherModal .modal-footer .buttonExecute {
+  background-color: #4f49ee;
+  border-color: #4a45e2;
+}
+#positionSwitcherModal .modal-footer button {
+  font-size: 1.05em;
+}
+
+.prem #positionSwitcherModal .executeButtonLock {
+  display: none;
+}
+.prem #positionSwitcherModal .executeButtonText {
+  display: block;
+}
+#positionSwitcherModal .executeButtonLock {
+  display: block;
+}
+#positionSwitcherModal .executeButtonText {
+  display: none;
+}
+#positionSwitcherModal .basketNoPosHeader {
+  display: none;
+  user-select: none;
+}
+.noPos #positionSwitcherModal .basketNoPosHeader {
+  display: block;
+  margin: 2rem 0rem;
+  font-weight: bold;
+  color: #6e6e6e;
+}
+#positionSwitcherModal table {
+  
+  
+  
+}
+.noPos #positionSwitcherModal table {
+  display: none;
+}
+#positionSwitcherModal th {
+  opacity: 0.3;
+  font-size: 0.9em;
+  padding-bottom: 8px;
+}
+[data-theme="default"] #positionSwitcherModal th {
+  opacity: 0.6;
+}
+#positionSwitcherModal .searchParentDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8em;
+  margin-bottom: 0.2em;
+}
+#positionSwitcherModal .searchButtonSymbol {
+  cursor: pointer;
+  
+  color: #616161;
+}
+#positionSwitcherModal .basketSearchDiv {
+  
+  
+}
+#positionSwitcherModal .basketSearchDiv input {
+  
+  outline: 2px solid #81818112;
+  padding: 3px 8px;
+  text-align: center;
+  caret-color: #5c5c5c;
+  border-color: #5353534d;
+  border-width: 2px;
+  border-radius: 2px;
+}
+[data-theme="default"] #positionSwitcherModal .basketSearchDiv input {
+  border-width: 1px;
+  background: #f9f9f9;
+  box-shadow: inset 0px -2px 4px #e3e3e3;
+}
+
+#positionSwitcherModal .ulParentDiv {
+  z-index: 13;
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #212121;
+  border-bottom: 1px solid #7171714f;
+}
+[data-theme="default"] #positionSwitcherModal .ulParentDiv {
+  background-color: #fff;
+}
+
+#positionSwitcherModal .basketSearchDiv ul {
+  
+  margin: 0px;
+  width: 100%;
+  font-size: 1em;
+  padding: 0px;
+
+  
+}
+#positionSwitcherModal .searchClose {
+  color: #989898;
+  font-size: 1.5em;
+  margin: 0.5em 0px;
+  cursor: pointer;
+  visibility: hidden;
+}
+#positionSwitcherModal .searchClose:hover {
+  opacity: 0.8;
+}
+#positionSwitcherModal .basketSearchDiv .searchClose:hover {
+  opacity: 0.9;
+}
+#positionSwitcherModal .basketSearchDiv ul li {
+  
+  list-style: none;
+  line-height: 1;
+  cursor: pointer;
+  margin: 0px 0px;
+  padding: 7px 0px;
+}
+#positionSwitcherModal .basketSearchDiv ul li:hover {
+  background-color: #333333;
+  
+}
+
+[data-theme="default"] #positionSwitcherModal .basketSearchDiv ul li:hover {
+  background-color: #e7e7e7;
+}
+#positionSwitcherModal .basketSearchDiv ul:first-child {
+  padding-top: 2px;
+}
+#positionSwitcherModal thead tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+}
+#positionSwitcherModal tbody tr {
+  border-bottom: 2px solid #ffffff08;
+}
+
+#positionSwitcherModal tbody tr.disabled {
+  opacity: 0.5;
+}
+#positionSwitcherModal tbody tr.sellPosRow:not(.disabled) {
+  background-color: #d54e4908;
+}
+#positionSwitcherModal tbody tr.buyPosRow:not(.disabled) {
+  background-color: #0065ff08;
+}
+[data-theme="default"] #positionSwitcherModal tbody tr.sellPosRow {
+  background-color: #d54e4900;
+}
+[data-theme="default"] #positionSwitcherModal tbody tr.buyPosRow {
+  background-color: #0065ff00;
+}
+
+#positionSwitcherModal tbody td {
+  padding: 10px 5px;
+}
+#positionSwitcherModal .posCheckbox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0em 0.25em;
+}
+
+#positionSwitcherModal .posCheckbox input {
+  height: 14px;
+  accent-color: #ffffff;
+}
+
+input[type="checkbox"] {
+  accent-color: #4caf50;
+  
+}
+
+#positionSwitcherModal .posExpiry select {
+  
+  background: transparent;
+  padding: 2px 5px;
+}
+[data-theme="default"] #positionSwitcherModal .posExpiry select {
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+}
+
+#positionSwitcherModal .posExpiry select * {
+  background: var(--color-bg-default);
+  padding: 2px 5px;
+}
+#positionSwitcherModal tbody .posLTP {
+  min-width: 3em;
+}
+#positionSwitcherModal .positionRow {
+  display: flex;
+  justify-content: space-evenly;
+}
+#positionSwitcherModal .posBuySellType {
+  cursor: pointer;
+  user-select: none;
+  min-width: 3em;
+}
+#positionSwitcherModal .posBuySellType span {
+  border: 1px solid;
+  font-size: 0.645em;
+}
+
+#positionSwitcherModal .posCallPutType {
+  
+  cursor: pointer;
+  user-select: none;
+}
+#positionSwitcherModal .posCallPutType span {
+  background: #c89f2a4f;
+  color: #ffffff;
+  padding: 1px 9px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  border: 1px solid;
+  border-color: #9c9c9c61;
+}
+[data-theme="default"] #positionSwitcherModal .posCallPutType span {
+  color: #000;
+}
+
+#positionSwitcherModal .posCallPutType span.call {
+  
+  background-color: #9d5f004a;
+}
+#positionSwitcherModal .posCallPutType span.put {
+  
+  background-color: #2ac89c2b;
+}
+[data-theme="default"] #positionSwitcherModal .posCallPutType span.put {
+  
+  background-color: #2ac89c59;
+}
+
+#positionSwitcherModal .rowUpDown {
+  display: flex;
+  gap: 0.45em;
+  justify-content: center;
+  align-items: center;
+}
+#positionSwitcherModal .rowUpDown span {
+  min-width: 2.9em;
+}
+.rowQuantity .su-input-group {
+  margin-bottom: 0px;
+}
+.rowQuantity .su-input-group input {
+  padding: 2px 8px;
+  text-align: center;
+  caret-color: #5c5c5c;
+}
+[data-theme="default"] .rowQuantity .su-input-group input {
+  border: 1px solid #c4c4c4;
+  border-radius: 2px;
+}
+#positionSwitcherModal .rowUpDown .fa-solid {
+  font-size: 1.25em;
+  color: #aeaeae;
+  cursor: pointer;
+}
+[data-theme="default"] #positionSwitcherModal .rowUpDown .fa-solid {
+  color: #939393;
+}
+
+#positionSwitcherModal .basketResponseDiv {
+  display: flex;
+  margin: 2px 5px;
+}
+
+#positionSwitcherModal .posDelete .fa-solid {
+  color: #b04141;
+  cursor: pointer;
+  padding: 0px 0.3em;
+}
+[data-theme="default"] #positionSwitcherModal .posDelete .fa-solid {
+  color: #f26e6e;
+}
+
+#positionSwitcherModal .responseMessage {
+  visibility: hidden;
+}
+
+
+
+
+.prem .open-positions td.select-cell {
+  
+}
+.open-positions .posUtilityParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.open-positions .posUtility {
+  display: flex;
+  gap: 0.6rem;
+}
+.open-positions i {
+  color: #8d8d8d;
+  font-size: 1rem;
+}
+.open-positions .positionEdit {
+  color: #6f9ca6;
+  
+}
+.open-positions .posDefaultUtility {
+  display: flex;
+  gap: 0.7rem;
+  margin-left: 0.3rem;
+  
+  padding: 0rem 0.2rem;
+  border-radius: 4px;
+}
+
+
+.indexMetaData.marketwatch-sidebar {
+  overflow: hidden;
+  
+}
+.indexMetaData.marketwatch-sidebar .marketwatch-selector {
+  
+}
+.indexMetaData.marketwatch-sidebar .omnisearch {
+  margin-top: 8rem;
+}
+.hiddenIndexMeta.marketwatch-sidebar .omnisearch {
+  margin-top: 1rem;
+}
+.hiddenIndexMetaParent.marketwatch-sidebar .omnisearch {
+  margin-top: 0;
+}
+.indexMetaData.searchOpen.marketwatch-sidebar .omnisearch {
+  filter: blur(0.2rem);
+  pointer-events: none;
+}
+.indexMetaData.marketwatch-sidebar .instruments {
+  height: calc(100% - 13rem) !important;
+}
+.indexMetaData.marketwatch-sidebar .instruments {
+  height: calc(100% - 13rem);
+}
+.indexMetaData.searchOpen.marketwatch-sidebar .instruments {
+  filter: blur(0.2rem);
+  pointer-events: none;
+}
+.indexMetaData.searchOpen.marketwatch-sidebar .indexMetaDataBody {
+  filter: blur(0.2rem);
+  pointer-events: none;
+}
+.indexMetaData.searchOpen.marketwatch-sidebar .marketwatch-selector {
+  filter: blur(0.2rem);
+  pointer-events: none;
+}
+#indexMetaDataWindowParent {
+  z-index: 155;
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0.2rem 0rem;
+  padding: 0.2rem 0rem;
+  border: 1px solid #343434;
+  border-style: none none solid none;
+  flex-direction: column;
+}
+.hiddenIndexMeta #indexMetaDataWindowParent {
+  border-style: none none dashed none;
+  margin-top: 0.35rem;
+}
+#indexMetaDataWindow {
+  flex-basis: 100%;
+}
+.hiddenIndexMeta #indexMetaDataWindow {
+  display: none;
+}
+#indexMetaDataWindowParent .floatingHeader {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#indexMetaDataWindowParent .floatingHeader .floatingToggle {
+  position: absolute;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+#indexMetaDataWindow .indexMetaDataBody {
+  display: flex;
+  justify-content: center;
+  
+  user-select: none;
+}
+#indexMetaDataWindow .indexMetaDataBodyColumn {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+#indexMetaDataWindow .indexMetaDataInfoRow {
+  display: flex;
+  gap: 0.3rem;
+  padding: 0.2rem 0.2rem;
+  justify-content: center;
+  align-items: center;
+}
+#indexMetaDataWindow .indexMetaDataInfoRow .subPart {
+  
+  margin: 0rem 0.2rem;
+  font-size: 0.7rem;
+}
+
+#indexMetaDataWindow .rowTitle {
+  color: #7b7b7b;
+  min-width: 5rem;
+  text-align: right;
+  font-size: 0.7rem;
+}
+#indexMetaDataWindow .rowValue {
+  color: #b3b3b3;
+  text-align: left;
+  min-width: 6.5rem;
+  font-size: 0.75rem;
+}
+#indexMetaDataWindow .su-select select {
+  padding: 0px 5px;
+}
+#indexMetaDataWindow .su-select select option {
+  padding: 0px 0px;
+}
+
+[data-theme="default"] #indexMetaDataWindow .rowValue {
+  color: #474747;
+}
+#indexMetaDataWindow .searchParentDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+#indexMetaDataWindow .rowExpiryDate {
+  display: flex;
+  flex-basis: 15%;
+  background: #252525;
+  border-radius: 4px;
+}
+#indexMetaDataWindow .searchButtonSymbol {
+  cursor: pointer;
+  
+  color: #616161;
+}
+#indexMetaDataWindow .basketSearchDiv {
+  
+  
+}
+#indexMetaDataWindow .basketSearchDiv input {
+  font-size: 0.8rem;
+  outline: 1px solid #81818112;
+  padding: 1px 2px;
+  text-align: center;
+  caret-color: #5c5c5c;
+  border-color: #5353534d;
+  border-width: 1px;
+  border-radius: 2px;
+}
+[data-theme="default"] #indexMetaDataWindow .basketSearchDiv input {
+  border-width: 1px;
+  background: #f9f9f9;
+  box-shadow: inset 0px -2px 4px #e3e3e3;
+}
+#indexMetaDataWindow .row {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-basis: 25%;
+}
+#indexMetaDataWindow .indexPrice {
+  font-size: 0.85rem;
+  margin: 0px 3px;
+}
+#indexMetaDataWindow .indexChange {
+  font-size: 0.75rem;
+  margin: 0px 3px;
+  color: #888888;
+  text-align: left;
+}
+
+#indexMetaDataWindow .ulParentDiv {
+  z-index: 151;
+  visibility: hidden;
+  position: absolute;
+  
+  left: 0;
+  right: 0;
+  top: 2rem;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #212121;
+  border-bottom: 1px solid #7171714f;
+}
+[data-theme="default"] #indexMetaDataWindow .ulParentDiv {
+  background-color: #fff;
+}
+
+#indexMetaDataWindow .basketSearchDiv ul {
+  
+  margin: 0px;
+  width: 100%;
+  font-size: 0.8rem;
+  padding: 0px;
+
+  
+}
+#indexMetaDataWindow .searchClose {
+  color: #989898;
+  font-size: 1.2rem;
+  margin: 0.35rem 0px;
+  cursor: pointer;
+  visibility: hidden;
+}
+#indexMetaDataWindow .searchClose:hover {
+  opacity: 0.8;
+}
+#indexMetaDataWindow .basketSearchDiv .searchClose:hover {
+  opacity: 0.9;
+}
+#indexMetaDataWindow .basketSearchDiv ul li {
+  
+  list-style: none;
+  line-height: 1;
+  cursor: pointer;
+  margin: 0px 0px;
+  padding: 7px 0px;
+  text-align: center;
+}
+#indexMetaDataWindow .basketSearchDiv ul li:hover {
+  background-color: #333333;
+  
+}
+
+[data-theme="default"] #indexMetaDataWindow .basketSearchDiv ul li:hover {
+  background-color: #e7e7e7;
+}
+#indexMetaDataWindow .basketSearchDiv ul:first-child {
+  padding-top: 2px;
+}
+
+
+#floatingPriceWindow {
+  text-align: center;
+  display: none;
+  margin: auto;
+  padding: 3px;
+  justify-content: center;
+  align-items: flex-end;
+}
+#floatingPriceWindow .modal-container {
+  
+  width: auto;
+  padding: 0px 0.5rem;
+  border: 2px solid #8585852e;
+  border-radius: 0px 0px 8px 8px;
+  border-bottom-width: 0px;
+  z-index: 56;
+  position: fixed;
+  top: -2px;
+  
+  
+  
+  display: flex;
+  flex-direction: column;
+  
+  
+  padding-bottom: 0.7rem;
+  font-size: 0.8rem;
+}
+[data-theme="default"] #floatingPriceWindow .modal-container {
+  border-color: #b6b6b68f;
+  border-width: 1.5px;
+}
+#floatingPriceWindow tbody td {
+  padding: 0.1rem 0.7rem 0rem 0rem;
+}
+
+#floatingPriceWindow .modalHeader {
+  
+  visibility: collapse;
+  height: 0;
+  margin: 0;
+}
+#floatingPriceWindow .modalHeader .opacityBtn {
+  cursor: pointer;
+  display: none;
+}
+#floatingPriceWindow .floatingFooter {
+  position: relative;
+}
+#floatingPriceWindow .floatingFooter span {
+  position: absolute;
+  top: 4px;
+}
+#floatingPriceWindow .floatingFooter .fa-solid {
+  font-size: 1rem;
+}
+
+#floatingPriceWindow .floatingRow {
+  font-weight: bold;
+  visibility: collapse;
+  
+  
+}
+#floatingPriceWindow .floatingSymbol {
+  text-align: right;
+  min-width: 6rem;
+}
+#floatingPriceWindow .floatingStatusTD {
+  padding: 0.1rem 0.2rem;
+}
+#floatingPriceWindow .floatingStatus {
+  background-color: #151515;
+  padding: 0px 0.435em;
+  font-size: 0.7rem;
+}
+
+#floatingPriceWindow .activeExpiry.floatingStatus {
+  background-color: #004054;
+}
+[data-theme="default"] #floatingPriceWindow .floatingStatus {
+  background-color: #525252;
+  color: white;
+}
+
+[data-theme="default"] #floatingPriceWindow .activeExpiry.floatingStatus {
+  background-color: #41a6ff;
+}
+#floatingPriceWindow .floatingPrice {
+}
+#floatingPriceWindow .floatingChange {
+  font-size: 0.7rem;
+  
+}
+#floatingPriceWindow .floatingChangePercent {
+  font-size: 0.7rem;
+}
+
+#floatingStopLossWindow {
+  text-align: center;
+  display: flex;
+  margin: auto;
+  
+  justify-content: center;
+  align-items: flex-end;
+  margin-right: 4rem;
+}
+#floatingStopLossWindow .floatingHeader {
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+#floatingStopLossWindow .floatingHeader span {
+  position: absolute;
+  top: -1.2rem;
+  text-align: center;
+}
+#floatingStopLossWindow .upArrowBtn {
+  display: none;
+}
+#floatingStopLossWindow.hiddenSL .upArrowBtn {
+  display: block;
+}
+
+#floatingStopLossWindow .floatingHeader .fa-solid {
+  font-size: 1.2rem;
+  color: #7e7e7e;
+  display: none;
+}
+[data-theme="default"] #floatingStopLossWindow .floatingHeader .fa-solid {
+  color: #292929;
+}
+#floatingStopLossWindow .floatingColumnParent {
+  display: flex;
+}
+
+#floatingStopLossWindow.hiddenSL .floatingColumnParent {
+  display: none;
+}
+#floatingStopLossWindow.settingVisible .floatingColumnParent {
+  
+}
+
+#floatingStopLossWindow .floatingFooter {
+  font-size: 0.8rem;
+  min-height: 0.1rem;
+  min-width: 11rem;
+}
+#floatingStopLossWindow .stopLossMessage {
+  
+}
+#floatingStopLossWindow.hiddenSL .stopLossMessage {
+  
+}
+
+#stopLossWarningWindowBG {
+  inset: 0;
+  opacity: 0.35;
+  z-index: 61;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+#stopLossWarningWindow {
+  
+  background-color: #1d1d1d;
+  position: fixed;
+  inset: 0;
+  width: 30rem;
+  z-index: 150;
+  height: 22rem;
+  margin: auto;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+}
+#stopLossWarningWindow .warningHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+#stopLossWarningWindow .warningHeader div {
+  flex-basis: 33.33%;
+  padding: 0rem 0.5rem;
+}
+#stopLossWarningWindow .warningContent {
+}
+
+#floatingStopLossWindow .stopLossModal {
+  
+  width: auto;
+  padding: 0.6rem 0.5rem;
+  border: 1px solid #8585852e;
+  border-radius: 8px 8px 0px 0px;
+  border-bottom: 0px;
+  z-index: 40;
+  position: absolute;
+  
+  bottom: 0;
+  margin-bottom: var(--statusBarHeight);
+  display: flex;
+  flex-direction: column;
+  
+  
+  padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+  background-color: #080808;
+  border-color: #00405400;
+}
+[data-theme="default"] #floatingStopLossWindow .stopLossModal {
+  background-color: #ffffff;
+  border-color: #343434;
+}
+
+
+#floatingStopLossWindow .floatingStopLossBorder {
+  border-left: 2px solid #f51c40;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+}
+#floatingStopLossWindow.SLActive .stopLossModal {
+  border-color: #5b00ff;
+}
+#floatingStopLossWindow .floatingSecondHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -1rem;
+  margin-top: -0.5rem;
+  z-index: 41;
+}
+#floatingStopLossWindow.hiddenSL .floatingSecondHeader {
+  display: none;
+}
+
+#floatingStopLossWindow .floatingColumn {
+  margin: 0.25rem 1rem;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: self-end;
+}
+#floatingStopLossWindow .floatingColumn .floatingColumnHeader {
+  font-weight: bold;
+  font-size: 0.8rem;
+  
+}
+
+#floatingStopLossWindow .floatingColumn input {
+  margin: 0px 6px;
+  font-weight: bold;
+  border: 0.5px solid #2e2e2e;
+  caret-color: #595959;
+  border-radius: 2px;
+  width: 70px;
+  padding: 1px 6px;
+  text-align: center;
+}
+
+#floatingStopLossWindow .floatingSLSettingsParent {
+  display: none;
+  justify-content: center;
+  
+  position: relative;
+  border-radius: 4px;
+  
+  padding: 0.5rem;
+  
+  margin: 0.5rem;
+  flex-direction: column;
+  margin-top: 1rem;
+  gap: 0.15rem;
+  background: #181818;
+}
+
+[data-theme="default"] #floatingStopLossWindow .floatingSLSettingsParent {
+  background-color: #ededed;
+}
+#floatingStopLossWindow.settingVisible .floatingSLSettingsParent {
+  display: flex;
+}
+#floatingStopLossWindow .floatingSettingClose {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+#floatingStopLossWindow .floatingSettingClose i {
+  
+  font-size: 1.3rem;
+}
+#floatingStopLossWindow .floatingWarningBtn {
+  
+  font-size: 1rem;
+}
+#floatingStopLossWindow .floatingSLSetting {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  gap: 1rem;
+  color: #a7a7a7;
+  font-size: 0.85rem;
+}
+#floatingStopLossWindow .floatingSLSetting .settingTitleLabel {
+  min-width: 12rem;
+}
+#floatingStopLossWindow #floatingPL {
+  font-weight: bold;
+}
+.enabledTiledWindow .positions-breakdown {
+  
+  overflow: hidden;
+}
+
+.order-window {
+  width: var(--order-window-width);
+}
+
+#fundFrame {
+  display: none;
+}
+
+.groupDiv td:hover {
+  background-color: unset !important;
+}
+
+.groupDiv {
+  border-top: 2px solid #2c2c2c;
+}
+[data-theme="default"] .groupDiv {
+  border-top: 2px solid #cbcbcb94;
+}
+
+.groupedBody {
+  border-bottom: 2px solid #2c2c2c;
+}
+
+[data-theme="default"] .groupedBody {
+  border-bottom: 2px solid #cbcbcb94;
+}
+
+.positions {
+  font-size: 0.875rem;
+}
+
+.positions th.pnl {
+  min-width: 3.125rem !important;
+}
+.groupedBody tr td {
+  border: 0px !important;
+}
+
+.positions td.pnl {
+  min-width: 4.168rem !important;
+}
+
+.marketwatch-sidebar .enterfade-enter-active {
+  -webkit-animation: fadeInDown 0 ease !important;
+  animation: fadeInDown 0s ease !important;
+}
+
+.marketwatch-sidebar .fade-enter-active,
+.marketwatch-sidebar .fade-leave-active {
+  -webkit-transition: opacity 0s ease;
+  transition: opacity 0s ease;
+}
+
+.marketwatch-sidebar .market-depth-fade-enter-active {
+  -webkit-transition: opacity 0s;
+  transition: opacity 0s;
+}
+
+.disabledTiledWindow {
+  --order-content-width: calc(0vw - 0px) !important;
+}
+
+
+
+.enabledTiledWindow .container-right {
+  flex: 1 1 var(--right-content-width) !important;
+  max-width: var(--right-content-width) !important;
+  height: 98vh !important;
+  overflow: scroll;
+}
+
+body.enabledTiledWindow {
+  overflow: hidden;
+}
+
+.baskets-tray {
+  bottom: 16px;
+}
+
+
+
+.disableTableHeader {
+  pointer-events: none;
+}
+
+
+
+.groupSLTarget {
+  flex-direction: column;
+  justify-content: right;
+  font-weight: bold;
+  font-size: 0.85rem;
+  gap: 5px;
+  visibility: collapse;
+}
+
+.groupSLTarget .targetHeader {
+  text-align: right;
+  min-width: 58px;
+  font-size: 0.8rem;
+}
+.groupDiv .groupMessage {
+  font-weight: normal;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.groupSLTarget input {
+  margin: 0px 6px;
+  border: 0.5px solid #2e2e2e;
+  caret-color: #595959;
+  border-radius: 4px;
+  width: 4.5rem;
+  padding: 1px 6px;
+  text-align: center;
+}
+
+[data-theme="default"] input {
+  border: 0.5px solid #999999;
+}
+
+.groupMaxPL {
+  display: flex;
+  white-space: nowrap;
+}
+.groupProfitSection {
+  display: flex;
+  align-items: center;
+}
+.hiddenPL .groupMaxPL {
+  visibility: hidden;
+  height: 0px;
+}
+
+.groupName {
+  cursor: pointer;
+  user-select: none;
+  flex: 1;
+  margin: 0 3px;
+  font-size: 1.06rem;
+  text-align: right;
+}
+.groupName:hover {
+  color: #d4603b;
+}
+
+.groupProfit {
+  flex: 1;
+  margin: 0 3px;
+  font-size: 1.06rem;
+  text-align: left;
+}
+
+.groupCalProfit {
+  display: none;
+  font-size: 0.9rem;
+  margin-left: 0.2rem;
+  opacity: 0.4;
+}
+.calActive .groupCalProfit {
+  display: block;
+}
+
+.groupMaxProfit,
+.groupMaxLoss,
+.groupProjected {
+  text-align: left;
+  margin: 0px 5px;
+  min-width: 3.5rem;
+}
+.groupMetaDetailsParent {
+  margin-top: 0.5rem;
+}
+.groupMetaDetails {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  
+  gap: 0.2rem 0.5rem;
+
+  font-weight: bold;
+  font-size: 0.85rem;
+  flex-wrap: wrap;
+}
+.groupCallPutInfoParent {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  margin-top: 0.6em;
+}
+.groupCallPutInfoDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.hiddenGroupMetaDetails.groupMetaDetails {
+  display: none;
+}
+.hiddenGroupMetaDetails.groupCallPutInfoParent {
+  display: none;
+}
+
+.groupCallPutInfoHeader {
+  font-weight: bold;
+}
+.groupMetaPart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  align-items: center;
+  gap: 0.45rem;
+  
+  border-radius: 4px;
+  padding: 0.1rem 0.4rem;
+  border: 1px solid #242424;
+}
+[data-theme="default"] .groupMetaPart {
+  
+  border: 1px solid #e9e9e9;
+}
+
+.groupMetaPartHeader {
+  color: #656565;
+  
+  
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+.groupMetaPartValue {
+  min-width: 3.25rem;
+}
+.groupCallPutInfoDetail .groupMetaPartValue {
+  min-width: 1.5rem;
+  text-align: center;
+}
+
+#MTMChartCheckBoxDiv {
+  display: none;
+}
+
+.prem #MTMChartCheckBoxDiv {
+  display: flex;
+}
+
+.enabledTiledWindow .container-left {
+  flex: 0 0 var(--left-content-root-width) !important;
+}
+
+.enabledTiledWindow .header .header-left {
+  flex: 0 0 calc(var(--left-content-root-width));
+}
+
+.enabledTiledWindow .positions table td {
+  
+  padding: 0.625rem 0.25rem;
+}
+
+.enabledTiledWindow .positions .change-percent {
+  min-width: 40px;
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+}
+
+.open-positions .toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marketwatch-sidebar {
+  padding-bottom: var(--statusBarHeight);
+}
+.hiddenIndexMeta.marketwatch-sidebar {
+  padding-bottom: calc(var(--statusBarHeight) + 1rem);
+}
+
+.compactView .marketwatch-sidebar .instruments .instrument .info,
+.compactView
+  .marketwatch-sidebar
+  .instruments
+  .instrument
+  .info
+  .symbol-wrapper {
+  line-height: 1.2;
+}
+
+.compactView .positions {
+  line-height: 1.2 !important;
+}
+
+.enabledTiledWindow .wrapper {
+  max-width: var(--wrapperMaxWidth) !important;
+}
+
+.enabledTiledWindow .page-positions .page-title {
+  margin-left: 15px !important;
+}
+
+.enabledTiledWindow .page-positions .page-content {
+  padding-left: 8px !important;
+}
+
+
+#orderDiv {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  flex: 1 1 var(--order-content-width) !important;
+  max-width: var(--order-content-width) !important;
+  border: 1px solid black;
+}
+
+[data-theme="default"] #orderDiv {
+  border: 1px transparent;
+}
+
+#positionDiv {
+  width: 5000px;
+  display: none;
+}
+
+#fundFrame {
+  display: none;
+}
+
+#orderFrame {
+  border: 0px;
+  
+  min-width: 1024px;
+  width: 59vw;
+  height: 94vh;
+  margin-left: 0px;
+  margin-bottom: var(--statusBarHeight);
+}
+
+
+
+
+.order-window {
+  
+  margin-bottom: var(--statusBarHeight);
+  
+}
+
+
+
+#topKitePlusHeader {
+  margin: auto;
+}
+
+#topKitePlusHeader a {
+  cursor: pointer;
+}
+
+.hiddenOC .option-chain-modal {
+  visibility: hidden;
+}
+
+.su-toast-item {
+  line-height: 1.7 !important;
+}
+
+.container-right thead {
+  position: inherit !important;
+}
+
+.open-positions .text-right,
+.day-positions .text-right {
+  width: 110px;
+  
+  
+}
+
+
+
+.pinnedInstSpan {
+  color: var(--color-text-default);
+  opacity: 0.7;
+}
+
+.pinnedAveragePrice {
+  color: var(--color-text-default);
+}
+
+.enabledTiledWindow .pinned-instruments {
+  border-width: 0px !important;
+}
+
+.compactView .market-depth {
+  line-height: 1.4 !important;
+}
+
+.watchListFeature .container-left .omnisearch {
+  display: flex;
+}
+
+.watchListFeature .container-left .omnisearch header {
+  width: 80%;
+}
+
+.watchListFeature .omnisearch .tabs {
+  z-index: 50;
+}
+
+.watchListFeature #watchListButtonDiv {
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-left: 1px solid #262626;
+  border-bottom: 1px solid #262626;
+  border-color: var(--color-border-default);
+}
+
+.watchListFeature #watchListButtonDiv .icon {
+  font-size: 1.06rem;
+  display: inline-block;
+}
+
+#watchListSettingButton {
+  color: #999999;
+}
+
+#watchListDeleteButton {
+  color: #b74747;
+}
+#watchListSettingRow {
+  display: flex;
+  margin: 0px 8px;
+  padding: 2px 4px;
+  border-bottom: 1px solid;
+  border-color: var(--color-border-1);
+  border-radius: 4px;
+}
+[data-theme="default"] #watchListDeleteButton {
+  color: #ff2c2c;
+}
+
+#watchListGenerateButton {
+  color: #33a26b;
+}
+
+
+
+.hideInstrument .actions {
+  display: none !important;
+}
+
+.hideInstrument .context-menu {
+  display: none !important;
+}
+
+.ceNiceName {
+  color: #c89f2a !important;
+}
+
+.peNiceName {
+  color: #3e7ce2 !important;
+}
+
+[data-theme="default"] .ceNiceName {
+  color: #b69024 !important;
+}
+
+.compactView .marketwatch-sidebar .instruments .instrument .actions {
+  margin-top: 2px !important;
+  height: 40px !important;
+  padding-top: 3px;
+  padding-bottom: 4px;
+}
+
+.compactView
+  .marketwatch-sidebar
+  .instruments
+  .instrument
+  .actions
+  .position-top {
+  padding-bottom: 5px;
+}
+
+.compactView
+  .marketwatch-sidebar
+  .instruments
+  .instrument
+  .actions
+  .position-bottom {
+  margin-top: -10px;
+}
+
+.marketwatch-sidebar .marketwatch-selector {
+  bottom: var(--statusBarHeight) !important;
+}
+
+
+
+
+
+#stickyOpenDiv,
+#stickyCloseDiv {
+  opacity: 0.95;
+  z-index: 150;
+  position: fixed;
+  
+  
+  top: 44px;
+  
+  right: 0vw;
+  background: #353535;
+  background: var(--color-bg-default);
+  padding: 8px 4px;
+  border-radius: 5px;
+  margin-right: -7px;
+  border: solid #b4b4b4 3px;
+  border-color: var(--color-text-default);
+  border-color: #617df5;
+}
+
+#stickyOpenDiv span,
+#stickyCloseDiv span {
+  color: var(--color-text-default);
+}
+
+#stickyOpenDiv:hover,
+#stickyCloseDiv:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+
+
+.tabContent a:hover {
+  cursor: pointer !important;
+}
+
+.lockSpan:hover {
+  cursor: pointer !important;
+}
+
+#customNoticeLayer {
+  z-index: 150;
+  position: fixed;
+  left: 35%;
+  right: 35%;
+  top: -8%;
+  
+  border-radius: 3px;
+  transition: top 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
+#customNoticeLayer .notice-wrap {
+  text-align: center;
+}
+
+#customNoticeLayer .content {
+  padding: 10px 40px 2px 40px !important;
+}
+
+#customNoticeLayer ul {
+  background-color: #24703c;
+  border-radius: 10px;
+}
+
+#customNoticeLayer.info ul {
+  
+  background-color: #362470;
+  border-radius: 10px;
+}
+
+#customNoticeLayer.error ul {
+  
+  background-color: #af3e3e;
+  border-radius: 10px;
+}
+
+#customNoticeLayer span {
+  font-weight: 800;
+}
+
+#customNoticeLayer.error span {
+  
+  color: #d9d9d9;
+}
+
+#customNoticeLayer.info span {
+  
+  color: #d9d9d9;
+}
+
+#customNoticeLayer.normal span {
+  
+  color: #d9d9d9;
+}
+
+
+#statusRootDiv {
+  z-index: 50;
+  
+  height: var(--statusBarHeight);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  border-color: #fbfbfb;
+  border-width: 1px;
+  background-color: #080808;
+  color: rgb(221, 221, 221);
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-weight: 600;
+  font-size: 0.96rem;
+  font-size: 0.85vw;
+}
+
+[data-theme="default"] #statusRootDiv {
+  background-color: white;
+  border-top: solid 1px black;
+  color: rgb(28, 28, 28);
+}
+
+#statusRootDiv > div {
+  flex-grow: 3;
+}
+
+#statusRootDiv .statusNumber {
+  min-width: 6.5vw;
+  display: inline-block;
+  text-align: left;
+  user-select: none;
+}
+
+#statusRootDiv a :hover {
+  opacity: 0.8;
+}
+
+#statusButtonsSet {
+  
+  flex-grow: 0 !important;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: space-around;
+  margin-right: 1rem;
+}
+.statusBarButton {
+  cursor: pointer;
+}
+#basketOpenBtn {
+  visibility: hidden;
+}
+.prem #basketOpenBtn {
+  visibility: visible;
+}
+
+#availTD {
+  visibility: hidden;
+}
+
+.colonSep {
+  color: rgb(187, 187, 187);
+  user-select: none;
+}
+
+.statusEmptyBlock {
+  width: 25%;
+}
+
+#equityCommoditySwitchParent {
+  flex-grow: 0 !important;
+  margin-left: 5px;
+}
+
+#equityCommoditySwitch:hover {
+  cursor: pointer;
+}
+
+#equityCommoditySwitch span {
+  font-size: 0.81rem;
+  color: gray;
+}
+
+.marginHeader {
+  color: rgb(147, 147, 147);
+  font-size: 90%;
+  margin-bottom: 0.3em;
+  user-select: none;
+}
+
+[data-theme="default"] .marginHeader {
+  color: rgb(126, 126, 126);
+}
+
+#emptyTD {
+  visibility: collapse;
+}
+
+.marginTD {
+  width: 14%;
+}
+
+.mtmTD {
+  width: 11%;
+}
+
+.text-White {
+  color: #fbfbfb;
+}
+
+.text-Zero {
+  color: #919191;
+}
+
+.text-Negative,
+#totalCharges {
+  color: #f15757;
+}
+
+[data-theme="default"] .text-Negative,
+[data-theme="default"] #totalCharges {
+  color: #f50808;
+}
+
+.text-Positive {
+  color: #45cf70;
+}
+
+[data-theme="default"] .text-Positive {
+  color: #00c73e;
+}
+
+
+
+
+
+@media screen and (min-width: 2200px) {
+  #orderFrame {
+    height: 96vh !important;
+  }
+
+  #emptyTD {
+    flex-grow: 8 !important;
+    visibility: hidden;
+  }
+
+  #statusRootDiv {
+    font-size: 17px;
+  }
+
+  .marginHeader {
+    font-size: 15px;
+  }
+  #floatingStopLossWindow {
+    margin-right: 6rem;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .groupMetaPart {
+    padding: 0.1rem 0.2rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  html {
+    --rootMultiplier: 0.9;
+    --baseFontWidth: 90%;
+  }
+  html:has(body.enabledTiledWindow) {
+    font-size: 90%;
+  }
+
+  
+  
+
+  .pinned-instruments {
+    gap: 0.5rem;
+  }
+
+  #orderFrame {
+    
+  }
+
+  .instrument-widget {
+    
+    font-size: 0.85rem !important;
+  }
+
+  
+  .enabledTiledWindow .marketwatch-selector a.item {
+    padding: 10px 1.25vw;
+  }
+  .enabledTiledWindow .positions td,
+  .enabledTiledWindow .positions th {
+    padding-left: 0.25rem !important;
+    padding-right: 0.25rem !important;
+  }
+
+  .enabledTiledWindow .groupMetaDetails {
+    gap: 0rem 1.3rem;
+  }
+  .enabledTiledWindow .groupMetaPart {
+    flex-direction: column;
+    gap: 0rem;
+    padding: 0.1rem 0.6rem;
+  }
+  .enabledTiledWindow .groupMetaPartValue {
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 1400px) {
+  html {
+    --rootMultiplier: 0.85;
+    --baseFontWidth: 85%;
+  }
+  
+  html:has(body.enabledTiledWindow) {
+    font-size: 85%;
+  }
+  
+
+  .enabledTiledWindow {
+    
+  }
+
+  
+
+  .baskets-tray {
+    bottom: 48px;
+  }
+
+  
+
+  .positions .context-menu-list {
+    top: 0px !important;
+    position: absolute !important;
+    left: 35px !important;
+  }
+
+  .marketwatch-sidebar .context-menu-list {
+    z-index: 100;
+    top: 30px !important;
+    position: absolute !important;
+    left: -130px !important;
+  }
+
+  .enabledTiledWindow .mobile .positions {
+    scale: unset !important;
+  }
+
+  .enabledTiledWindow .positions thead th.instrument {
+    min-width: 10rem;
+  }
+  .groupProfit,
+  .groupName {
+    font-size: 1rem;
+  }
+  .groupMetaDetails {
+    gap: 0.2rem 1rem;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  html {
+    --rootMultiplier: 0.7;
+    --baseFontWidth: 70%;
+  }
+  
+  html:has(body.enabledTiledWindow) {
+    font-size: 70%;
+  }
+  
+  #statusRootDiv {
+    font-size: 0.92vw;
+  }
+  body {
+    overflow-x: hidden;
+  }
+
+  .enabledTiledWindow .open-positions .toolbar-before {
+    display: none;
+  }
+
+  .enabledTiledWindow .price-change .dim {
+    font-size: 0.8rem !important;
+  }
+
+  .enabledTiledWindow {
+    
+  }
+
+  #orderFrame {
+    
+  }
+
+  .enabledTiledWindow .marketwatch-sidebar {
+    
+  }
+
+  .enabledTiledWindow .marketwatch-selector a.item {
+    padding: 8px 1.15vw !important;
+  }
+
+  .enabledTiledWindow .order-window {
+    scale: 0.95;
+    
+  }
+
+  .enabledTiledWindow .positions .product .text-label {
+    min-width: 3.125rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+  .enabledTiledWindow .positions td,
+  .enabledTiledWindow .positions th {
+    padding-left: 0.3rem !important;
+    padding-right: 0.3rem !important;
+  }
+  .enabledTiledWindow .positions thead th.instrument {
+    min-width: 10rem;
+  }
+
+  .positions-breakdown {
+    display: none;
+  }
+
+  #positionSwitcherModal .modal-container {
+    width: 52em;
+  }
+  .enabledTiledWindow .open-positions .toolbar-before {
+    display: none;
+  }
+  .disabledTiledWindow .data-table table tbody tr td,
+  .data-table table tfoot tr td {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .open-positions .posUtility {
+    gap: 0.3rem;
+  }
+  .open-positions .posDefaultUtility {
+    gap: 0.4rem;
+    margin-left: 0.2rem;
+  }
+
+  .groupMetaDetails {
+    gap: 0rem 1.3rem;
+  }
+  .groupMetaPart {
+    flex-direction: column;
+    gap: 0rem;
+    padding: 0.1rem 0.6rem;
+  }
+  .groupMetaPartValue {
+    text-align: center;
+  }
+}
+
+
+
+@media screen and (max-width: 970px) {
+  html {
+    --rootMultiplier: 1;
+  }
+  html:has(body.enabledTiledWindow) {
+    
+    --baseFontWidth: 100%;
+  }
+  .groupDiv {
+    display: table-row !important;
+  }
+  .enabledTiledWindow {
+    --left-content-width: calc(0vw - 0px) !important;
+    --left-content-root-width: calc(0vw - 0px) !important;
+    --right-content-width: calc(100vw - 0px) !important;
+    --order-content-width: calc(0vw - 0px) !important;
+  }
+
+  #orderFrame,
+  #statusRootDiv,
+  #stickyOpenDiv,
+  #stickyCloseDiv {
+    visibility: hidden;
+    display: none;
+  }
+}

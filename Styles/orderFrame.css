@@ -1,0 +1,256 @@
+.enabledTiledWindow {
+  --right-content-width: calc(59vw - 0px) !important;
+}
+
+.enabledTiledWindow .container-right {
+  flex: 1 1 var(--right-content-width) !important;
+  max-width: var(--right-content-width) !important;
+  height: 98vh !important;
+  
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.modal-mask.contract-note {
+  display: none;
+}
+
+.app .container {
+  margin: 0 0 !important;
+}
+
+.container-right {
+  max-width: 60vw !important;
+}
+
+.page-content {
+  padding-left: 2px !important;
+}
+
+.page-title {
+  margin-left: 8px !important;
+}
+
+
+
+[data-tippy-root] {
+  margin-left: -4rem !important;
+}
+.orderbook .toolbar {
+  margin-right: 7vw;
+}
+
+.orderbook table {
+  font-size: 13px;
+  width: 90%;
+}
+.orderbook .has-tag {
+  display: none;
+}
+.compactView .orderbook {
+  line-height: 1.1 !important;
+}
+
+.orderbook table td {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+}
+
+.trades table {
+  width: 88%;
+}
+
+.orderbook section {
+  margin-bottom: 35px !important;
+}
+
+.orderbook table td:first-child {
+  padding-left: 10px !important;
+}
+
+.orderbook .product {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.orderbook .order-status {
+  max-width: 48px !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.orderbook .completed-orders-wrap .average-price,
+.orderbook .pending-orders-wrap .average-price {
+  padding-right: 10px !important;
+}
+
+.orderbook .data-table .order-status-label {
+  font-size: 0.55rem !important;
+  min-width: 22px !important;
+}
+
+thead {
+  position: inherit !important;
+}
+
+
+
+.risk-disclosure-modal-modal,
+.container-left,
+.toolbar-before,
+.download,
+.notifications-bar,
+.notice,
+.header {
+  display: none;
+}
+
+.context-menu-list .multiple-2 {
+  display: none !important;
+}
+
+.modal-container {
+  width: 46vw !important;
+  margin-left: 5px !important;
+}
+
+.risk-disclosure-modal-modal {
+  transform-origin: left;
+  scale: 0.8;
+}
+
+
+
+.baskets-modal {
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+}
+
+.baskets-modal .modal-footer {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.baskets .modal-container {
+  scale: 0.9;
+  min-width: 55vw !important;
+  width: 55vw !important;
+  
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.alerts-create-modal {
+  scale: 0.87;
+  min-width: 57vw !important;
+  width: 57vw !important;
+  justify-content: left;
+  
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.alerts-create-modal .su-modal-header,
+.alerts-create-modal .su-modal-body,
+.alerts-create-modal .su-modal-footer {
+  padding: 0 5px;
+}
+
+.alerts-create-modal .flex-block div {
+  min-width: unset !important;
+}
+
+.alerts-create-modal .su-modal-container {
+  width: unset !important;
+}
+
+.sip-create-modal {
+  min-width: 50vw !important;
+  width: 50vw !important;
+  justify-content: left;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+
+  
+}
+
+.sip-create-modal .su-modal-container {
+  width: unset !important;
+}
+
+.noBasket .order-window {
+  visibility: hidden;
+}
+
+.noBasket .baskets-modal table {
+  visibility: hidden;
+}
+
+.baskets .margins-summary {
+  width: 62%;
+}
+
+.baskets .margins-summary .value {
+  font-size: 1.2rem !important;
+}
+
+.baskets .actions {
+  width: 36%;
+  margin-left: 2px !important;
+}
+
+
+
+
+
+.order-window {
+  margin-bottom: 3vh;
+  left: 10px;
+}
+
+
+@media screen and (min-width: 1400px) {
+  .alerts-create-modal {
+    scale: 1;
+  }
+}
+
+
+@media screen and (max-width: 1600px) {
+  
+}
+@media screen and (max-width: 1100px) {
+  .order-window {
+    min-width: 50vw !important;
+    width: 50vw !important;
+  }
+
+  .variety-quick.order-window {
+    min-width: 30vw !important;
+    width: 30vw !important;
+  }
+
+  
+  .page-title {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .baskets .modal-container {
+    scale: 0.75;
+    min-width: 66vw !important;
+    width: 66vw !important;
+  }
+
+  .baskets .margins-summary .value {
+    font-size: 1.1rem !important;
+  }
+
+  .risk-disclosure-modal-modal {
+    scale: 0.6;
+  }
+}
+
+@media screen and (max-width: 800px) {
+}

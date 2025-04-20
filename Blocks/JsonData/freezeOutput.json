@@ -1,0 +1,994 @@
+[
+  {
+    "Name": "SENSEX",
+    "FreezeQuantity": "1000"
+  },
+  {
+    "Name": "BANKEX",
+    "FreezeQuantity": "900"
+  },
+  {
+    "Name": "NIFTY",
+    "FreezeQuantity": "1800"
+  },
+  {
+    "Name": "AARTIIND",
+    "FreezeQuantity": "50000"
+  },
+  {
+    "Name": "ABB",
+    "FreezeQuantity": "3750"
+  },
+  {
+    "Name": "MIDCPNIFTY",
+    "FreezeQuantity": "2800"
+  },
+  {
+    "Name": "NIFTYNXT50",
+    "FreezeQuantity": "600"
+  },
+  {
+    "Name": "ABCAPITAL",
+    "FreezeQuantity": "108000"
+  },
+  {
+    "Name": "BANKNIFTY",
+    "FreezeQuantity": "900"
+  },
+  {
+    "Name": "ABBOTINDIA",
+    "FreezeQuantity": "800"
+  },
+  {
+    "Name": "ABFRL",
+    "FreezeQuantity": "78000"
+  },
+  {
+    "Name": "ACC",
+    "FreezeQuantity": "12000"
+  },
+  {
+    "Name": "ADANIENSOL",
+    "FreezeQuantity": "31250"
+  },
+  {
+    "Name": "ADANIENT",
+    "FreezeQuantity": "9000"
+  },
+  {
+    "Name": "FINNIFTY",
+    "FreezeQuantity": "1800"
+  },
+  {
+    "Name": "ADANIGREEN",
+    "FreezeQuantity": "18750"
+  },
+  {
+    "Name": "ADANIPORTS",
+    "FreezeQuantity": "16000"
+  },
+  {
+    "Name": "ALKEM",
+    "FreezeQuantity": "4000"
+  },
+  {
+    "Name": "AMBUJACEM",
+    "FreezeQuantity": "45000"
+  },
+  {
+    "Name": "ANGELONE",
+    "FreezeQuantity": "8000"
+  },
+  {
+    "Name": "APLAPOLLO",
+    "FreezeQuantity": "17500"
+  },
+  {
+    "Name": "APOLLOHOSP",
+    "FreezeQuantity": "3750"
+  },
+  {
+    "Name": "APOLLOTYRE",
+    "FreezeQuantity": "51000"
+  },
+  {
+    "Name": "ASHOKLEY",
+    "FreezeQuantity": "100000"
+  },
+  {
+    "Name": "ASIANPAINT",
+    "FreezeQuantity": "8000"
+  },
+  {
+    "Name": "ASTRAL",
+    "FreezeQuantity": "14680"
+  },
+  {
+    "Name": "ATGL",
+    "FreezeQuantity": "31000"
+  },
+  {
+    "Name": "AUBANK",
+    "FreezeQuantity": "40000"
+  },
+  {
+    "Name": "AUROPHARMA",
+    "FreezeQuantity": "16500"
+  },
+  {
+    "Name": "AXISBANK",
+    "FreezeQuantity": "18750"
+  },
+  {
+    "Name": "BAJAJ-AUTO",
+    "FreezeQuantity": "2250"
+  },
+  {
+    "Name": "BAJAJFINSV",
+    "FreezeQuantity": "15000"
+  },
+  {
+    "Name": "BAJFINANCE",
+    "FreezeQuantity": "3750"
+  },
+  {
+    "Name": "ATUL",
+    "FreezeQuantity": "3000"
+  },
+  {
+    "Name": "BALKRISIND",
+    "FreezeQuantity": "9000"
+  },
+  {
+    "Name": "BANDHANBNK",
+    "FreezeQuantity": "140000"
+  },
+  {
+    "Name": "BANKBARODA",
+    "FreezeQuantity": "87750"
+  },
+  {
+    "Name": "BANKINDIA",
+    "FreezeQuantity": "241250"
+  },
+  {
+    "Name": "BEL",
+    "FreezeQuantity": "85500"
+  },
+  {
+    "Name": "BERGEPAINT",
+    "FreezeQuantity": "52800"
+  },
+  {
+    "Name": "BHARATFORG",
+    "FreezeQuantity": "15000"
+  },
+  {
+    "Name": "BHARTIARTL",
+    "FreezeQuantity": "14250"
+  },
+  {
+    "Name": "BHEL",
+    "FreezeQuantity": "78750"
+  },
+  {
+    "Name": "BIOCON",
+    "FreezeQuantity": "75000"
+  },
+  {
+    "Name": "BOSCHLTD",
+    "FreezeQuantity": "750"
+  },
+  {
+    "Name": "BPCL",
+    "FreezeQuantity": "72000"
+  },
+  {
+    "Name": "BRITANNIA",
+    "FreezeQuantity": "4000"
+  },
+  {
+    "Name": "BSE",
+    "FreezeQuantity": "5000"
+  },
+  {
+    "Name": "BSOFT",
+    "FreezeQuantity": "40000"
+  },
+  {
+    "Name": "CAMS",
+    "FreezeQuantity": "5000"
+  },
+  {
+    "Name": "CANBK",
+    "FreezeQuantity": "270000"
+  },
+  {
+    "Name": "CDSL",
+    "FreezeQuantity": "14000"
+  },
+  {
+    "Name": "CESC",
+    "FreezeQuantity": "146250"
+  },
+  {
+    "Name": "BATAINDIA",
+    "FreezeQuantity": "18750"
+  },
+  {
+    "Name": "CGPOWER",
+    "FreezeQuantity": "36250"
+  },
+  {
+    "Name": "CHAMBLFERT",
+    "FreezeQuantity": "57000"
+  },
+  {
+    "Name": "CHOLAFIN",
+    "FreezeQuantity": "18750"
+  },
+  {
+    "Name": "CIPLA",
+    "FreezeQuantity": "16250"
+  },
+  {
+    "Name": "COALINDIA",
+    "FreezeQuantity": "52500"
+  },
+  {
+    "Name": "COFORGE",
+    "FreezeQuantity": "3000"
+  },
+  {
+    "Name": "COLPAL",
+    "FreezeQuantity": "8750"
+  },
+  {
+    "Name": "CONCOR",
+    "FreezeQuantity": "30000"
+  },
+  {
+    "Name": "CROMPTON",
+    "FreezeQuantity": "54000"
+  },
+  {
+    "Name": "CUMMINSIND",
+    "FreezeQuantity": "7500"
+  },
+  {
+    "Name": "CYIENT",
+    "FreezeQuantity": "12000"
+  },
+  {
+    "Name": "DABUR",
+    "FreezeQuantity": "37500"
+  },
+  {
+    "Name": "DALBHARAT",
+    "FreezeQuantity": "13750"
+  },
+  {
+    "Name": "DEEPAKNTR",
+    "FreezeQuantity": "9000"
+  },
+  {
+    "Name": "DELHIVERY",
+    "FreezeQuantity": "76250"
+  },
+  {
+    "Name": "DIVISLAB",
+    "FreezeQuantity": "4000"
+  },
+  {
+    "Name": "DIXON",
+    "FreezeQuantity": "1500"
+  },
+  {
+    "Name": "DLF",
+    "FreezeQuantity": "33000"
+  },
+  {
+    "Name": "CANFINHOME",
+    "FreezeQuantity": "29250"
+  },
+  {
+    "Name": "DMART",
+    "FreezeQuantity": "6000"
+  },
+  {
+    "Name": "DRREDDY",
+    "FreezeQuantity": "18750"
+  },
+  {
+    "Name": "EICHERMOT",
+    "FreezeQuantity": "5250"
+  },
+  {
+    "Name": "CUB",
+    "FreezeQuantity": "150000"
+  },
+  {
+    "Name": "ESCORTS",
+    "FreezeQuantity": "6000"
+  },
+  {
+    "Name": "EXIDEIND",
+    "FreezeQuantity": "54000"
+  },
+  {
+    "Name": "FEDERALBNK",
+    "FreezeQuantity": "150000"
+  },
+  {
+    "Name": "GAIL",
+    "FreezeQuantity": "117500"
+  },
+  {
+    "Name": "COROMANDEL",
+    "FreezeQuantity": "14000"
+  },
+  {
+    "Name": "HCLTECH",
+    "FreezeQuantity": "14000"
+  },
+  {
+    "Name": "011NSETEST",
+    "FreezeQuantity": "100000"
+  },
+  {
+    "Name": "021NSETEST",
+    "FreezeQuantity": "100000"
+  },
+  {
+    "Name": "031NSETEST",
+    "FreezeQuantity": "100000"
+  },
+  {
+    "Name": "041NSETEST",
+    "FreezeQuantity": "100000"
+  },
+  {
+    "Name": "051NSETEST",
+    "FreezeQuantity": "100000"
+  },
+  {
+    "Name": "061NSETEST",
+    "FreezeQuantity": "100000"
+  },
+  {
+    "Name": "071NSETEST",
+    "FreezeQuantity": "100000"
+  },
+  {
+    "Name": "081NSETEST",
+    "FreezeQuantity": "100000"
+  },
+  {
+    "Name": "091NSETEST",
+    "FreezeQuantity": "100000"
+  },
+  {
+    "Name": "101NSETEST",
+    "FreezeQuantity": "100000"
+  },
+  {
+    "Name": "111NSETEST",
+    "FreezeQuantity": "100000"
+  },
+  {
+    "Name": "121NSETEST",
+    "FreezeQuantity": "100000"
+  },
+  {
+    "Name": "131NSETEST",
+    "FreezeQuantity": "100000"
+  },
+  {
+    "Name": "141NSETEST",
+    "FreezeQuantity": "100000"
+  },
+  {
+    "Name": "151NSETEST",
+    "FreezeQuantity": "100000"
+  },
+  {
+    "Name": "161NSETEST",
+    "FreezeQuantity": "100000"
+  },
+  {
+    "Name": "GLENMARK",
+    "FreezeQuantity": "16250"
+  },
+  {
+    "Name": "GMRAIRPORT",
+    "FreezeQuantity": "281250"
+  },
+  {
+    "Name": "GODREJCP",
+    "FreezeQuantity": "20000"
+  },
+  {
+    "Name": "GODREJPROP",
+    "FreezeQuantity": "9000"
+  },
+  {
+    "Name": "GRANULES",
+    "FreezeQuantity": "40000"
+  },
+  {
+    "Name": "GRASIM",
+    "FreezeQuantity": "10000"
+  },
+  {
+    "Name": "HDFCAMC",
+    "FreezeQuantity": "6000"
+  },
+  {
+    "Name": "HDFCLIFE",
+    "FreezeQuantity": "33000"
+  },
+  {
+    "Name": "HEROMOTOCO",
+    "FreezeQuantity": "4500"
+  },
+  {
+    "Name": "ICICIGI",
+    "FreezeQuantity": "12500"
+  },
+  {
+    "Name": "ICICIPRULI",
+    "FreezeQuantity": "30000"
+  },
+  {
+    "Name": "IGL",
+    "FreezeQuantity": "55000"
+  },
+  {
+    "Name": "INDHOTEL",
+    "FreezeQuantity": "30000"
+  },
+  {
+    "Name": "INFY",
+    "FreezeQuantity": "12000"
+  },
+  {
+    "Name": "IRB",
+    "FreezeQuantity": "410000"
+  },
+  {
+    "Name": "IRFC",
+    "FreezeQuantity": "141000"
+  },
+  {
+    "Name": "JINDALSTEL",
+    "FreezeQuantity": "25000"
+  },
+  {
+    "Name": "JKCEMENT",
+    "FreezeQuantity": "5000"
+  },
+  {
+    "Name": "JSL",
+    "FreezeQuantity": "38750"
+  },
+  {
+    "Name": "JSWENERGY",
+    "FreezeQuantity": "37500"
+  },
+  {
+    "Name": "JSWSTEEL",
+    "FreezeQuantity": "27000"
+  },
+  {
+    "Name": "JUBLFOOD",
+    "FreezeQuantity": "37500"
+  },
+  {
+    "Name": "M&M",
+    "FreezeQuantity": "7000"
+  },
+  {
+    "Name": "LAURUSLABS",
+    "FreezeQuantity": "51000"
+  },
+  {
+    "Name": "MCX",
+    "FreezeQuantity": "4000"
+  },
+  {
+    "Name": "LICHSGFIN",
+    "FreezeQuantity": "40000"
+  },
+  {
+    "Name": "LICI",
+    "FreezeQuantity": "23000"
+  },
+  {
+    "Name": "LODHA",
+    "FreezeQuantity": "18000"
+  },
+  {
+    "Name": "LUPIN",
+    "FreezeQuantity": "12750"
+  },
+  {
+    "Name": "M&MFIN",
+    "FreezeQuantity": "80000"
+  },
+  {
+    "Name": "PNB",
+    "FreezeQuantity": "240000"
+  },
+  {
+    "Name": "GNFC",
+    "FreezeQuantity": "39000"
+  },
+  {
+    "Name": "GUJGASLTD",
+    "FreezeQuantity": "50000"
+  },
+  {
+    "Name": "HAL",
+    "FreezeQuantity": "6000"
+  },
+  {
+    "Name": "HAVELLS",
+    "FreezeQuantity": "15000"
+  },
+  {
+    "Name": "HDFCBANK",
+    "FreezeQuantity": "16500"
+  },
+  {
+    "Name": "HFCL",
+    "FreezeQuantity": "207500"
+  },
+  {
+    "Name": "HINDALCO",
+    "FreezeQuantity": "42000"
+  },
+  {
+    "Name": "HINDCOPPER",
+    "FreezeQuantity": "79500"
+  },
+  {
+    "Name": "MAXHEALTH",
+    "FreezeQuantity": "26250"
+  },
+  {
+    "Name": "HINDPETRO",
+    "FreezeQuantity": "60750"
+  },
+  {
+    "Name": "HINDUNILVR",
+    "FreezeQuantity": "9000"
+  },
+  {
+    "Name": "HUDCO",
+    "FreezeQuantity": "97000"
+  },
+  {
+    "Name": "ICICIBANK",
+    "FreezeQuantity": "21000"
+  },
+  {
+    "Name": "IDEA",
+    "FreezeQuantity": "1600000"
+  },
+  {
+    "Name": "METROPOLIS",
+    "FreezeQuantity": "12000"
+  },
+  {
+    "Name": "IDFCFIRSTB",
+    "FreezeQuantity": "300000"
+  },
+  {
+    "Name": "IEX",
+    "FreezeQuantity": "150000"
+  },
+  {
+    "Name": "INDIAMART",
+    "FreezeQuantity": "9000"
+  },
+  {
+    "Name": "INDIANB",
+    "FreezeQuantity": "38000"
+  },
+  {
+    "Name": "INDIGO",
+    "FreezeQuantity": "6000"
+  },
+  {
+    "Name": "INDUSINDBK",
+    "FreezeQuantity": "20000"
+  },
+  {
+    "Name": "INDUSTOWER",
+    "FreezeQuantity": "68000"
+  },
+  {
+    "Name": "IOC",
+    "FreezeQuantity": "146250"
+  },
+  {
+    "Name": "MOTHERSON",
+    "FreezeQuantity": "142000"
+  },
+  {
+    "Name": "IPCALAB",
+    "FreezeQuantity": "19500"
+  },
+  {
+    "Name": "IRCTC",
+    "FreezeQuantity": "26250"
+  },
+  {
+    "Name": "MUTHOOTFIN",
+    "FreezeQuantity": "13750"
+  },
+  {
+    "Name": "ITC",
+    "FreezeQuantity": "48000"
+  },
+  {
+    "Name": "JIOFIN",
+    "FreezeQuantity": "66000"
+  },
+  {
+    "Name": "KALYANKJIL",
+    "FreezeQuantity": "31000"
+  },
+  {
+    "Name": "NAUKRI",
+    "FreezeQuantity": "3000"
+  },
+  {
+    "Name": "KEI",
+    "FreezeQuantity": "6000"
+  },
+  {
+    "Name": "KOTAKBANK",
+    "FreezeQuantity": "16000"
+  },
+  {
+    "Name": "KPITTECH",
+    "FreezeQuantity": "16000"
+  },
+  {
+    "Name": "LALPATHLAB",
+    "FreezeQuantity": "7500"
+  },
+  {
+    "Name": "LT",
+    "FreezeQuantity": "6000"
+  },
+  {
+    "Name": "LTF",
+    "FreezeQuantity": "133860"
+  },
+  {
+    "Name": "LTIM",
+    "FreezeQuantity": "4500"
+  },
+  {
+    "Name": "LTTS",
+    "FreezeQuantity": "5000"
+  },
+  {
+    "Name": "MANAPPURAM",
+    "FreezeQuantity": "150000"
+  },
+  {
+    "Name": "MARICO",
+    "FreezeQuantity": "36000"
+  },
+  {
+    "Name": "MARUTI",
+    "FreezeQuantity": "2000"
+  },
+  {
+    "Name": "MFSL",
+    "FreezeQuantity": "24000"
+  },
+  {
+    "Name": "MGL",
+    "FreezeQuantity": "16000"
+  },
+  {
+    "Name": "MPHASIS",
+    "FreezeQuantity": "8250"
+  },
+  {
+    "Name": "MRF",
+    "FreezeQuantity": "200"
+  },
+  {
+    "Name": "NATIONALUM",
+    "FreezeQuantity": "112500"
+  },
+  {
+    "Name": "NAVINFLUOR",
+    "FreezeQuantity": "7000"
+  },
+  {
+    "Name": "NCC",
+    "FreezeQuantity": "71000"
+  },
+  {
+    "Name": "NESTLEIND",
+    "FreezeQuantity": "10000"
+  },
+  {
+    "Name": "NHPC",
+    "FreezeQuantity": "320000"
+  },
+  {
+    "Name": "NYKAA",
+    "FreezeQuantity": "147500"
+  },
+  {
+    "Name": "OBEROIRLTY",
+    "FreezeQuantity": "14000"
+  },
+  {
+    "Name": "OFSS",
+    "FreezeQuantity": "2000"
+  },
+  {
+    "Name": "OIL",
+    "FreezeQuantity": "53750"
+  },
+  {
+    "Name": "PAGEIND",
+    "FreezeQuantity": "600"
+  },
+  {
+    "Name": "PAYTM",
+    "FreezeQuantity": "26000"
+  },
+  {
+    "Name": "PETRONET",
+    "FreezeQuantity": "75000"
+  },
+  {
+    "Name": "POLICYBZR",
+    "FreezeQuantity": "13000"
+  },
+  {
+    "Name": "POLYCAB",
+    "FreezeQuantity": "3750"
+  },
+  {
+    "Name": "POONAWALLA",
+    "FreezeQuantity": "72500"
+  },
+  {
+    "Name": "PRESTIGE",
+    "FreezeQuantity": "13000"
+  },
+  {
+    "Name": "NMDC",
+    "FreezeQuantity": "270000"
+  },
+  {
+    "Name": "NTPC",
+    "FreezeQuantity": "60000"
+  },
+  {
+    "Name": "ONGC",
+    "FreezeQuantity": "96250"
+  },
+  {
+    "Name": "PEL",
+    "FreezeQuantity": "22500"
+  },
+  {
+    "Name": "RAMCOCEM",
+    "FreezeQuantity": "25500"
+  },
+  {
+    "Name": "SAIL",
+    "FreezeQuantity": "200000"
+  },
+  {
+    "Name": "SHREECEM",
+    "FreezeQuantity": "1000"
+  },
+  {
+    "Name": "PERSISTENT",
+    "FreezeQuantity": "4000"
+  },
+  {
+    "Name": "PFC",
+    "FreezeQuantity": "52000"
+  },
+  {
+    "Name": "PIDILITIND",
+    "FreezeQuantity": "7500"
+  },
+  {
+    "Name": "PIIND",
+    "FreezeQuantity": "6250"
+  },
+  {
+    "Name": "SUNPHARMA",
+    "FreezeQuantity": "14000"
+  },
+  {
+    "Name": "POWERGRID",
+    "FreezeQuantity": "72000"
+  },
+  {
+    "Name": "SUPREMEIND",
+    "FreezeQuantity": "5000"
+  },
+  {
+    "Name": "PVRINOX",
+    "FreezeQuantity": "16280"
+  },
+  {
+    "Name": "TATAELXSI",
+    "FreezeQuantity": "4000"
+  },
+  {
+    "Name": "TATAMOTORS",
+    "FreezeQuantity": "27500"
+  },
+  {
+    "Name": "RBLBANK",
+    "FreezeQuantity": "125000"
+  },
+  {
+    "Name": "RECLTD",
+    "FreezeQuantity": "50000"
+  },
+  {
+    "Name": "RELIANCE",
+    "FreezeQuantity": "20000"
+  },
+  {
+    "Name": "SBICARD",
+    "FreezeQuantity": "32000"
+  },
+  {
+    "Name": "SBILIFE",
+    "FreezeQuantity": "15000"
+  },
+  {
+    "Name": "SBIN",
+    "FreezeQuantity": "30000"
+  },
+  {
+    "Name": "SHRIRAMFIN",
+    "FreezeQuantity": "7500"
+  },
+  {
+    "Name": "SIEMENS",
+    "FreezeQuantity": "3000"
+  },
+  {
+    "Name": "SJVN",
+    "FreezeQuantity": "189000"
+  },
+  {
+    "Name": "SONACOMS",
+    "FreezeQuantity": "38750"
+  },
+  {
+    "Name": "SRF",
+    "FreezeQuantity": "11250"
+  },
+  {
+    "Name": "SUNTV",
+    "FreezeQuantity": "30000"
+  },
+  {
+    "Name": "SYNGENE",
+    "FreezeQuantity": "30000"
+  },
+  {
+    "Name": "TATACHEM",
+    "FreezeQuantity": "22000"
+  },
+  {
+    "Name": "TECHM",
+    "FreezeQuantity": "18000"
+  },
+  {
+    "Name": "TATACOMM",
+    "FreezeQuantity": "12500"
+  },
+  {
+    "Name": "TATACONSUM",
+    "FreezeQuantity": "22800"
+  },
+  {
+    "Name": "TATAPOWER",
+    "FreezeQuantity": "54000"
+  },
+  {
+    "Name": "TATASTEEL",
+    "FreezeQuantity": "165000"
+  },
+  {
+    "Name": "TCS",
+    "FreezeQuantity": "5250"
+  },
+  {
+    "Name": "TIINDIA",
+    "FreezeQuantity": "6000"
+  },
+  {
+    "Name": "TITAN",
+    "FreezeQuantity": "7000"
+  },
+  {
+    "Name": "TORNTPHARM",
+    "FreezeQuantity": "7500"
+  },
+  {
+    "Name": "TRENT",
+    "FreezeQuantity": "3000"
+  },
+  {
+    "Name": "TVSMOTOR",
+    "FreezeQuantity": "10500"
+  },
+  {
+    "Name": "UBL",
+    "FreezeQuantity": "12000"
+  },
+  {
+    "Name": "ULTRACEMCO",
+    "FreezeQuantity": "2000"
+  },
+  {
+    "Name": "UNIONBANK",
+    "FreezeQuantity": "221250"
+  },
+  {
+    "Name": "UNITDSPR",
+    "FreezeQuantity": "17500"
+  },
+  {
+    "Name": "UPL",
+    "FreezeQuantity": "40650"
+  },
+  {
+    "Name": "VBL",
+    "FreezeQuantity": "35000"
+  },
+  {
+    "Name": "VEDL",
+    "FreezeQuantity": "57500"
+  },
+  {
+    "Name": "VOLTAS",
+    "FreezeQuantity": "15000"
+  },
+  {
+    "Name": "WIPRO",
+    "FreezeQuantity": "90000"
+  },
+  {
+    "Name": "YESBANK",
+    "FreezeQuantity": "1040000"
+  },
+  {
+    "Name": "ZOMATO",
+    "FreezeQuantity": "80000"
+  },
+  {
+    "Name": "ZYDUSLIFE",
+    "FreezeQuantity": "27000"
+  },
+  {
+    "Name": "171NSETEST",
+    "FreezeQuantity": "100000"
+  },
+  {
+    "Name": "181NSETEST",
+    "FreezeQuantity": "100000"
+  }
+]

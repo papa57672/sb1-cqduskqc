@@ -1,0 +1,30 @@
+:root {
+  
+}
+
+.app .container {
+  background-color: #ffffffba;
+}
+.marketwatch-sidebar {
+  background-color: #fff6a97c;
+}
+.app .header {
+  background-color: #ffffffba;
+}
+.data-table table tbody tr td.pnl,
+.data-table table tfoot tr td.pnl {
+  background-color: unset;
+}
+
+[data-theme="default"] #statusRootDiv {
+  background-color: #fff7a9;
+}
+
+.data-table table tbody tr:hover td,
+.data-table table tbody tr.focused td {
+  background-color: #fff7a9;
+}
+
+#chartIndexMetaControlDiv {
+  background-color: #fff7a9;
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "InstrumentToken": 256265,
+        "Name": "NIFTY 50",
+        "FoName": "NIFTY",
+        "FreezeLimit": 1800    
+    },
+    {
+        "InstrumentToken": 265,
+        "Name": "SENSEX",
+        "FoName": "SENSEX",
+        "FreezeLimit": 1000    
+    },
+    {
+        "InstrumentToken": 260105,
+        "Name": "NIFTY BANK",
+        "FoName": "BANKNIFTY",
+        "FreezeLimit": 900      
+    },
+    {
+        "InstrumentToken": 257801,
+        "Name": "NIFTY FIN SERVICE",
+        "FoName": "FINNIFTY",
+        "FreezeLimit": 1800
+    },
+    {
+        "InstrumentToken": 288009,
+        "Name": "NIFTY MID SELECT",
+        "FoName": "MIDCPNIFTY",
+        "FreezeLimit": 2800    
+    },
+    {
+        "InstrumentToken": 274441,
+        "Name": "BANKEX",
+        "FoName": "BANKEX",
+        "FreezeLimit": 900
+    }
+]

@@ -1,0 +1,46 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "Arts/icon_128.png",
+         "16": "Arts/icon_16.png",
+         "32": "Arts/icon_32.png",
+         "48": "Arts/icon_48.png",
+         "64": "Arts/icon_64.png"
+      },
+      "default_popup": "Blocks/Extra/Popup.html"
+   },
+   "content_scripts": [ {
+      "all_frames": false,
+      "js": [ "Scripts/Plugins/Helper.js", "Scripts/Plugins/LightWeightChart.js", "Scripts/Plugins/StorageHelperChrome.js", "Scripts/coreKP.js" ],
+      "matches": [ "https://kite.zerodha.com/*" ]
+   }, {
+      "all_frames": true,
+      "js": [ "Scripts/Plugins/Helper.js", "Scripts/Plugins/StorageHelperChrome.js", "Scripts/tradeAPIURL.js" ],
+      "matches": [ "https://api.kite.trade/Data" ]
+   } ],
+   "description": "Enhance the Zerodha Kite web platform experience with KitePlus!",
+   "icons": {
+      "128": "Arts/icon_128.png",
+      "16": "Arts/icon_16.png",
+      "32": "Arts/icon_32.png",
+      "48": "Arts/icon_48.png",
+      "64": "Arts/icon_64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0Dq6ZtdFSD2BARROy2pWRL1lt10M8SmslZaUns4hdiYblkEiuDvHdYAmXlcMmX3IV+xCViW+5bw7jL7tPn3lleNPOAKyryQ7Azc8btDvp/Q1OfiNWrREOY6D/BYVUvMTDucnthHMUv771NElCmgnpHvd0dA6KHmELT6V4LI+PJY1jJ7kHOBZtGdzMf/TSXn1UyiOZ5p5jDwhGGHVKglyC+4hw8EvNE2cfe72pqcbIE2TnZHdC7QMbXflyhHAMmsJSHD4ylKQgShyo1iOh2WXkts/d0I7wdcaocsoMwpFIsal3TNYz99d2OuRFJMUghgCMykvvt/pIa8WVqmBaasHLwIDAQAB",
+   "manifest_version": 3,
+   "name": "KitePlus For Zerodha",
+   "options_page": "Blocks/Extra/SettingPage.html",
+   "permissions": [ "storage", "unlimitedStorage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.59",
+   "web_accessible_resources": [ {
+      "matches": [ "https://kite.zerodha.com/*" ],
+      "resources": [ "Arts/*" ]
+   }, {
+      "matches": [ "https://kite.zerodha.com/*" ],
+      "resources": [ "Styles/*" ]
+   }, {
+      "matches": [ "https://kite.zerodha.com/*" ],
+      "resources": [ "Blocks/*" ]
+   } ]
+}

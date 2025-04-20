@@ -1,0 +1,295 @@
+#chartRootParentIndexMeta {
+  position: absolute;
+  visibility: collapse;
+}
+.page-positions #chartRootParentIndexMeta {
+  margin: 5px;
+  border: solid 2px;
+  
+  border-color: #212121;
+  position: relative;
+  visibility: visible;
+  border-right: transparent;
+  border-left: transparent;
+}
+
+[data-theme="default"] .page-positions #chartRootParentIndexMeta {
+  border-color: #d9d9d9;
+}
+
+#chartRootParentIndexMeta.disabledIndexMetaChart {
+  display: none;
+}
+#chartRootParentIndexMeta.hiddenIndexMetaChart {
+  border: 1px solid #2d2d2d;
+  border-right: 0px;
+  border-left: 0px;
+}
+
+#chartRootParentIndexMeta.fullView {
+  
+  
+  background-color: #1d1d1d;
+  height: 100%;
+  z-index: 200;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 5%;
+  margin: 0px;
+}
+
+
+.lightWeightChartContainer {
+  display: flex;
+  align-items: center;
+}
+#lightWeightChartIndexMetaParent {
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+.hiddenIndexMetaChart .lightWeightChartContainer {
+  display: none;
+}
+
+#lightWeightChartIndexMetaParent .tv-lightweight-charts {
+  margin: auto;
+  height: 400px !important;
+  
+  
+}
+#chatIndexMetaRightButtonSet
+{
+  display: flex;
+}
+.fullView #lightWeightChartIndexMetaParent .tv-lightweight-charts {
+  height: 100% !important;
+}
+
+.fullView .lightWeightChartContainer {
+  
+  
+  height: 92%;
+}
+.fullView #lightWeightChartIndexMetaParent {
+  
+  
+  height: 100%;
+}
+
+.fullView #chatIndexMetaRightButtonSet {
+  margin-right: 1%;
+}
+
+#chartIndexMetaShowButton {
+  display: none;
+}
+#chartIndexMetaCloseButton {
+  display: block;
+}
+#chartIndexMetaMinButton
+{
+  display: none;
+}
+.fullView #chartIndexMetaMaxButton {
+  display: none;
+}
+.fullView #chartIndexMetaMinButton {
+  display: block;
+}
+.fullView #chartIndexMetaCloseButton {
+  display: none;
+}
+.hiddenIndexMetaChart #chartIndexMetaMaxButton {
+display: none;
+}
+
+.hiddenIndexMetaChart #chartIndexMetaShowButton {
+  display: block;
+}
+.hiddenIndexMetaChart #chartIndexMetaCloseButton {
+  display: none;
+}
+
+#chartIndexMetaControlDiv {
+  background-color: #181818;
+  font-size: 0.875rem;
+  padding: 0.3125rem 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #232323 solid 1px;
+}
+
+#chartHederIndexMetaLeftDiv {
+  
+  display: flex;
+  align-items: center;
+  flex-basis: 33.33%;
+}
+
+
+#chartIndexMetaControlSet {
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+  flex-basis: 55%;
+  gap: 1.3rem;
+}
+.hiddenIndexMetaChart #chartIndexMetaControlSet {
+  display: none;
+}
+
+#chartHeaderIndexMeta {
+  font-size: 1em;
+  margin: 0px 0.5em;
+  color: #adadad;
+  font-weight: bold;
+}
+
+.indexMetaSymbolSelect {
+  font-weight: bold;
+  min-width: 6rem;
+  background: #191919;
+  
+  padding: 0.15rem 0.2rem;
+  border-color: #3f3f3f;
+  border-radius: 4px;
+}
+[data-theme="default"] .indexMetaSymbolSelect {
+  color: #f5f5f5;
+  border-color: #5d5d5d;
+}
+.chartAxis {
+  user-select: none;
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+.leftChartAxisSpan {
+  writing-mode: vertical-lr;
+  position: relative;
+  margin-left: 0.5rem;
+  text-align: center;
+  transform: scale(-1) translate(-100%, -75%);
+  background: #2c2c2c;
+  padding: 0.3rem 0rem;
+  border-radius: 4px;
+}
+[data-theme="default"] .leftChartAxisSpan {
+  background-color: #f5f5f5;
+}
+.rightChartAxisSpan {
+  writing-mode: vertical-lr;
+  margin-right: 0.25rem;
+  background: #2c2c2c;
+  padding: 0.3rem 0rem;
+  border-radius: 4px;
+}
+[data-theme="default"] .rightChartAxisSpan {
+  background-color: #f5f5f5;
+}
+.metaChartTooltipStyle {
+  background-color: #181818;
+  min-width: 125px;
+  position: absolute;
+  display: none;
+  padding: 4px;
+  box-sizing: border-box;
+  font-size: 0.75rem;
+  text-align: left;
+  z-index: 1000;
+  top: 12px;
+  left: 12px;
+  pointer-events: none;
+  border: 1px solid #414141;
+  border-radius: 4px;
+  padding: 0.5rem 0.5rem;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[data-theme="default"] .metaChartTooltipStyle {
+  background-color: #fff;
+  border-color: #a7a7a7;
+}
+.metaChartTooltipParent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.25rem;
+}
+.metaChartTooltipDiv {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.metaChartTooltipHeader {
+  color: #a0a0a0;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+[data-theme="default"] .metaChartTooltipHeader {
+  color: #7b7b7b;
+}
+
+.metaChartTooltipValue {
+  font-size: 0.8rem;
+}
+
+.indexMetaToggleParent {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  gap: 0.25rem;
+  color: #a7a7a7;
+  font-size: 0.85rem;
+}
+.indexMetaToggleParent .indexMetaToggleLabel {
+  min-width: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#chartIndexMetaControlSet.sliderF #indexMetaIvToggle:checked + .slider {
+  background-color: #ddb813;
+}
+
+#chartIndexMetaControlSet.sliderF #indexMetaStraddleToggle:checked + .slider {
+  background-color: #13dda0;
+}
+
+.chartIndexMetaFooter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.25rem;
+}
+.chartIndexMetaFooter .chartButtons {
+  margin: 0.125rem 0.425rem;
+}
+.chartIndexMetaFooter .chartButtons i {
+  font-size: 1.1rem;
+}
+.hiddenIndexMetaChart .chartIndexMetaFooter {
+  display: none;
+}
+@media screen and (max-width: 1400px) {
+  .fullView .lightWeightChartContainer {
+    height: 89%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .fullView .lightWeightChartContainer {
+    height: 89%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .fullView .lightWeightChartContainer {
+    height: 90%;
+  }
+}
